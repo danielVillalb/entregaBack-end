@@ -1,0 +1,8 @@
+version: 1
+services:
+  - name: porfolio
+    env:
+      - key: JAVA_VERSION
+        value: 11
+    buildCommand: mvn clean install
+    runCommand: mvn exec:java -Dexec.mainClass=com.portfolio.porfolio
